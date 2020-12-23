@@ -1,0 +1,58 @@
+.main-image {
+	position: relative;
+	padding: 0 2.34% 0 6.4%;
+  width: 100%;
+  height: calc(100vh - 125px);
+
+  &__up {
+  	z-index: 100;
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	left: 10.39%;
+  	height: 97.73%;
+  	// width: 89.6%;
+
+  	& h1 {
+  		position: absolute;
+  		top: 22.24%;
+  		left: 0;
+  		font-weight: bold;
+			font-size: 38px;
+			line-height: 118%;
+			text-transform: uppercase;
+			font-feature-settings: 'pnum' on, 'lnum' on;
+			color: #E30016;
+  	}
+  }
+
+  &__button {
+    z-index: 1000;
+  	position: absolute;
+  	top: 42.74%;
+  	left: 12.42%;
+  	display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 315px;
+		height: 50px;
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 1;
+		color: #FFFFFF;
+		background: #24B4EA;
+  }
+
+  &__manager {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	height: 100%;
+  }
+
+  &__scroll-down {
+  	position: absolute;
+  	bottom: 9%;
+  	left: calc(50% - 15px);
+  }
+}

@@ -1,0 +1,123 @@
+.clouds {
+	position: absolute;
+	left: 7%;
+	right: 12%;
+	top: 6.5%;
+	bottom: 0;
+	// width: 1560px;
+	// max-height: 750px;
+  overflow: hidden;
+  animation: FadeIn 1s ease-out;
+  user-select: none;
+}
+
+.cloud {
+	position: absolute;
+	animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: Float, FadeFloat;
+  z-index: 1;
+
+	&--first {
+		top: 0;
+		left: 11.3%;
+	}
+
+	&--second {
+		bottom: 23.73%;
+		right: 23.5%;
+	}
+
+	&--third {
+		bottom: 0;
+		right: 0;
+	}
+
+	&--fourth {
+		bottom: 6.13%;
+		right: 28.4%;
+	}
+
+	&--fifth {
+		top: 26.93%;
+		right: .5%;
+	}
+
+	&--sixth {
+		top: 4.4%;
+		right: 44.67%;
+	}
+
+	&--seventh {
+		left: 6.13%;
+		bottom: .13%;
+	}
+
+	&--eighth {
+		top: 21.33%;
+		right: 33.83%;
+	}
+
+	&--ninth {
+		left: 3.4%;
+		bottom: 39.6%;
+	}
+
+	&--tenth {
+		top: 30.13%;
+		left: 39%;
+	}
+
+	&--eleventh {
+		left: 16.85%;
+		bottom: 29.73%;
+	}
+
+	&--twelfth {
+		left: .96%;
+		top: 44%;
+	}
+
+	&--thirteenth {
+		left: 37%;
+		bottom: 5.73%;
+	}
+
+	&--fourteenth {
+		left: 0;
+		top: 22.67%;
+	}
+
+	&--slow {
+		animation-duration: 220s;
+	}
+}
+
+
+@keyframes FadeIn {
+  from { 
+  	opacity: 0;
+  }
+  to { opacity: 1;
+  }
+}
+
+@keyframes Float {
+  from { 
+  	transform: translateX(100%) translateZ(0); 
+  }
+  to { 
+  	transform: translateX(-15%) translateZ(0); 
+  }
+}
+
+@keyframes FadeFloat {
+  0%, 100% { 
+  	opacity: 0; 
+  }
+  5%, 90% { 
+  	opacity: 1; 
+  }
+}
